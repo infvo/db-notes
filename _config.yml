@@ -9,6 +9,9 @@ logo: logo.png
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: force
+  exclude_patterns:
+    - 'bibliotheek-*'
+    - 'top2000-opdrachten*'  
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -22,8 +25,12 @@ bibtex_bibfiles:
 # Information about where the book exists on the web
 repository:
   url: https://github.com/infvo/db-notes  # Online location of your book
-  path_to_book: /  # Optional path to your book, relative to the repository root
+  path_to_book: ""  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
+
+launch_buttons:
+  binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
+  thebe: true
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository

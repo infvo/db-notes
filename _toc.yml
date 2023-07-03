@@ -6,6 +6,11 @@ root: intro
 
 parts:
 
+- caption: "Voorbeelden"
+  chapters:
+  - file: voorbeelden/bibliotheek-a
+  - file: voorbeelden/bibliotheek-a-uitwerkingen
+
 - caption: "Over het materiaal"
   chapters:
   - file: auteurs
